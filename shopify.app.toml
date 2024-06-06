@@ -1,3 +1,29 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "d4f9571a014b35ebbda8281018b87805"
+name = "dev-13-test-input"
+handle = "dev-13-test-input"
+application_url = "https://enrolled-competing-debian-snow.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "dev-13.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://enrolled-competing-debian-snow.trycloudflare.com/auth/callback",
+  "https://enrolled-competing-debian-snow.trycloudflare.com/auth/shopify/callback",
+  "https://enrolled-competing-debian-snow.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
